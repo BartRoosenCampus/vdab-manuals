@@ -7,17 +7,10 @@
     /*font-family: Monospaced, Menlo, Monaco, Consolas, "Courier New", monospace;*/
 }
 
-.parent {
+#page-content {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
+    grid-template-columns: 2fr 10fr;
 }
-
-.div1 { grid-area: 1 / 1 / 2 / 13; }
-.div2 { grid-area: 2 / 1 / 11 / 3; }
-.div3 { grid-area: 2 / 3 / 11 / 13; }
 
 h1 {
     font-size: 2rem;
@@ -31,26 +24,39 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    padding: .5rem 0;
+}
+
+h4 {
+    color: #32A399;
+    padding: .5rem 1rem;
+}
+
 p {
     line-height: 1.5;
     padding: 1rem;
 }
 
-.div2 {
+.left {
     background-color: #32A399;
 }
 
-.div3 {
+.right {
     padding: 1em;
     background-color: #EFF7FE;
 }
 
 .list {
-    padding: 1rem 2rem
+    padding: 1rem 3rem
 }
 
 .list li {
     padding: .5rem;
+}
+
+.list > ul > li > ul {
+    margin-left: 2rem;
 }
 
 nav > ul > li {
@@ -68,4 +74,12 @@ nav > ul > li > a {
 
 .floating-right {
     float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.picture-frame {
+    padding: .5rem 4rem;
 }

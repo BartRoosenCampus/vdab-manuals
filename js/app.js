@@ -34,7 +34,7 @@ function getContent(path, placeholder) {
 }
 
 function findPageContent() {
-    return localStorage.getItem('page_content') || "home";
+    return localStorage.getItem('page_content') || "manual";
 }
 
 getContent("title", page.title_placeholder);
